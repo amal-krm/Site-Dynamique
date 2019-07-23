@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -26,128 +29,111 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+  
+</head>
 <style>
 
-div.polaroid {
-   /* width: 80%;
-  
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
- 
-}
-.accolade{
-    
-    font-size:40px;
-    font-style:serif;
+.carousel-caption {
+    width:100%;
+    height:100%;
+    left:0 !important;
 }
 
-.accolade-2{
-    
-    font-size:40px;
-    font-style:serif;
-    padding-right:50vw;
-    
+.carousel-caption h3 {
+  text-align:left;
+  margin-left:30px;
 }
-
-.testimonial{
-    
-  color:#020a21
-}
-.text-post{
-    text-align:center;
-}
-.container .event{
-    margin-top:50px;
-}
-.event:hover {
-    
-  margin: auto;
-  height: 150px;
-  
-  padding-top: 40px;
-  text-align:center;
-  
-  color:#18d26e;
-  font-size:70px;
-  transition: height 2s;
-  transition: 2s;
+.carousel-caption p  {
+  margin-top25%;
   
 }
-
-.event {
-    
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    opacity: 1;
-    transition: box-shadow 0.3s ease-in-out;
-    height: 200px;
-    padding-top: 60px;
-    border: 2px solid #18d26e;
-    text-align:center;
-    
-   
-    
+@media screen and (max-width: 479px) {
+  .carousel-caption p {
+    margin-top:20%;
   }
-  .event span :hover {
-   font-size:90px; 
-   }
-   .container .services {
-
 }
-   
+
+@media screen and (min-width: 480px) and (max-width: 640px){
+  .carousel-caption p {
+    margin-top:30%;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .carousel-caption p {
+    margin-top:40%;
+  }
+}
+ .red
+      {
+        color: white;
+        background-color: red;
+      }
+      .green
+      {
+        color: white;
+        background-color: green;
+      }
+      .blue
+      {
+        color: white;
+        background-color: blue;
+      }
+
+      .ii{
+ height: 900px;
 
 
-/*.ana-area {
-  color: #fff;
-  background-color: #fff;
-  background-repeat: no-repeat;
+ background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  z-index: 1; }
-  .ana-area:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   
-    z-index: -1; }
-  .ana-area h2 {
-    color: #000;
-    font-size: 20px;
-    margin-bottom: 0px;
-    padding-bottom:30px;
-    font-size:40px;
-    
-    border-bottom:2px solid #18d26e;
-    display:inline-block;
-    font-weight: 400; }
-    @media (max-width: 767px) {
-      .ana-area h2 {
-        margin-bottom: 26px; } }
-*/
-.ana-area {
-  color: #fff;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1; 
+  position: relative; 
+width:100%;}
+.carousel-inner  .item img {
+      width: 100%;
+      height:67vw;
+  }
+
+.about-area{
+    background-image:url("img/OE7GPO0.png");
+}
+
+  .ana1-area {
+
+color: #fff;
+background-color: #fff;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+z-index: 1; 
 height:100px;}
-  .ana-area:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   
-    z-index: -1; }
-  .ana-area h2 {
-    color: #000;
+.ana1-area:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  z-index: -1; }
+.ana1-area h2 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-bottom:30px;
+  font-size:40px;
+  
+  border-bottom:2px solid #18d26e;
+  display:inline-block;
+  font-weight: 400; }
+  .about-area h2{
+        color: #000;
     font-size: 20px;
     margin-bottom: 0px;
     padding-bottom:30px;
@@ -155,161 +141,236 @@ height:100px;}
     
     border-bottom:2px solid #18d26e;
     display:inline-block;
-    font-weight: 400; }
-    @media (max-width: 767px) {
-      .ana-area h2 {
-        margin-bottom: 26px; } }
-        .ana-padding-top {
-  padding-top: 30px; }
-
-.ana-padding-bottom {
-  padding-bottom: 80px; }
-  .ana-area h2:hover{
+    font-weight: 400;
+  }
+  .about-area h2:hover{
     display: inline-block;
 transition: .3s;
 
 text-decoration:none;
 font-size: 50px;
-}
-a:hover {
--webkit-transform: scale(1.2);
-transform: scale(1.2);
   }
-  .ana1-area {
-  color: #fff;
-  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1; 
-height:100px;}
-    </style>
+  @media (max-width: 767px) {
+    .ana1-area h2 {
+      margin-bottom: 26px; } }
+      .ana1-padding-top {
+padding-top: 300px; }
 
-</head>
+.ana1-padding-bottom {
+padding-bottom: 50px; }
+.ana1-area h2:hover{
+  display: inline-block;
+transition: .3s;
+text-decoration:none;
+font-size: 50px;
+}
+.uu{
 
+ background-position: center;
+background-size: cover;
+position: relative;
+background-repeat: no-repeat;  
+
+}
+.yusra{
+    background-image:url("img/OE7GPO01.png");
+    height:750px;
+}
+</style>
 <body>
 
 @extends('layouts.gabarit')
 
 @section('content')
 
-    
-    <!--================Home Banner Area =================-->
+    <section class="banner-area  " style="margin-bottom:20opx;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-    <!--<section class="banner-area d-flex align-items-center">
-        <div class="container">
-            <div class="row" >
-                <div class="align-items-center" >
-                    <h1>BCH
-                    Larache</h1>
-                    
-                    <a href="#about-area" class="main_btn">Qui sommes nous ?</a>
-                    <a href="/Reclamation" class="main_btn_light">Faire une reclamation</a>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-
-<!--
-    <section class="banner-area d-flex align-items-center">
-        <div class="container">
-            <div class="row" >
-                <div class="align-items-center" >
-                    <h1 style="font-size:55px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">القسم الجماعي لحفظ الصحة</h1>
-                    
-                    <a href="#about-area" class="main_btn">من نحن؟</a>
-                    <a href="/Reclamation" class="main_btn_light">دفع شكاية</a>
-                </div>
-            </div>
-        </div>
-    </section>
-  -->
-  
-  
-  <section class="banner-area d-flex align-items-center">
-        <div class="container">
-            <div class="row" >
-                <div class=""style=" text-align:right;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;margin-left:20%;marging-right:20%;padding:9px;" >
-        
-                    <h1 style="font-size:55px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">القسم الجماعي لحفظ الصحة</h1>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../img/banner/15.jpg" alt="Los Angeles">
+      <div class="carousel-caption" style="margin-bottom:-6%;">
+      
+        <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+        <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
                    
-                 
-                    <a style="margin-bottom:100px;padding: 4px 40px 4px 40px;font-family: 'Lateef', serif; font-size:20px;"  href="/Reclamation" class="main_btn_light">دفع شكاية</a>
+                   <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../img/banner/14.jpg" alt="Chicago">
+      <div class="carousel-caption" style="margin-bottom:-4%;">
+      
+        <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+        <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
                    
-                    <a style="padding: 4px 40px 4px 40px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="#about-area" class="main_btn">من نحن ؟</a>
+                   <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../img/banner/18.jpg" alt="Chicago">
+      <div class="carousel-caption" style="margin-bottom:-4%;">
+      
+        <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+        <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
+                   
+                   <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../img/banner/4.jpg" alt="Chicago" style="height:67vw;">
+      <div class="carousel-caption" style="margin-bottom:-4%;">
+      
+        <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+        <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
+                   
+                   <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../img/banner/17.jpg" alt="Chicago">
+      <div class="carousel-caption" style="margin-bottom:-4%;">
+      
+      <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+      <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
                  
-                </div>
-               
-            </div>
-        </div>
+                 <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+    </div>
+    </div>
+
+    <div class="item">
+      <img src="../img/banner/23.jpg" alt="New York">
+      <div class="carousel-caption" style="margin-bottom:-4%;">
+      
+      <p style="font-size:30px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;"><strong> القسم الجماعي لحفظ الصحة لجماعة العرائش</strong></p>
+      <a style="margin-bottom:100px;padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;"  href="/reclamation" class="main_btn">دفع شكاية</a>
+                 
+                 <a style="padding: 3px 30px 3px 30px;font-family: 'Lateef', serif; font-size:20px;margin-left:10px;" href="/definition" class="main_btn">من نحن ؟</a>
+    </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
     </section>
-  
-    <!--================End Home Banner Area =================-->
-
-  
-
- <!--================About  Area =================-->
- <section class="about-area" id="about-area"style=" text-align:right;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="">
-                    <div class="about-content">
-                        <h4 style=" text-align:center;font-family: 'Lateef', serif; "><strong>عن القسم الجماعي لحفظ الصحة</strong><br></h4>
-                        <h6 style=" text-align:center;font-family: 'Lateef', serif; font-size:25px;" >ماذا نقدم لرعايتكم</h6>
- 
-                        <p>Give their their without moving were stars called so divide female be moving night may fish him own male vreated great Give their their without moving were. Stars called so divide female moving night may fish him own male created great opportunity deal.</p>
-
-                        <a style="font-family: 'Lateef', serif; font-size:20px;"class="link_one" href="#">اقرأ المزيد</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
+
+
+
+
+
+
+<div class="margin-top:60px;">
+
+    <img src="img/quotes.jpg" style="width:100%;height:600px;">
+
+</div>
     
-    <!--================About Area End =================-->
+    
+<!--================End Home Banner Area =================-->
 
-    <section class="about-area" id="about-area"style=" text-align:right;margin-top:70px;">
+  
+
+
+<section class="about-area" id="about-area"style=" text-align:right;margin-top:px; margin-bottom:250px;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="">
                     <div class="about-content">
                         <h4 style=" text-align:center;font-family: 'Lateef', serif; "><strong>كلمة الرئيس</strong><br></h4>
-                        <div class="testimonial_image" >
-                                
-                                   
-                                    <!--<h4 style="text-align: center;padding: 10px 20px; >" >- Dr. Suzanne Holroyd -</h4>  -->
-                               
-                            </div>
- 
-                        <p>Give their their without moving were stars called so divide female be moving night may fish him own male vreated great Give their their without moving were. Stars called so divide female moving night may fish him own male created great opportunity deal.</p>
-                        <h6 style=" text-align:center;font-family: 'Lateef', serif; font-size:25px;" > - كلمة رئيس القسم - </h6>
-                        <a style="font-family: 'Lateef', serif; font-size:20px;"class="link_one" href="#">اقرأ المزيد</a>
+                        <div class="clearfix" >
+                        <p >
+                        <img src="img/r2is.jpg" class="float-left mr-5"  style="width:350px;height:350px">
+                        <p  style="font-size: 20px;" >
+                       أيتها المواطنات<br> 
+                        أيها المواطنون<br> 
+                        بناءا على القانون التنظيمي  14/113 ، فإن مجال حفظ الصحة باعتباره مجال يدخل ضمن الاختصاصات الذاتية للجماعة من خلال اتخاد التدابير اللازمة لمحاربة عوامل انتشار الأمراض ، ومن خلال تنظيم المكاتب الجماعية لحفظ الصحة , فإنه يكتسي أهمية قصوى لدى مكتب ومجلس الجماعة إذ سجلنا باعتزاز شديد الإجماع الذي تشهده كل القضايا التي تطرح للمداولة والمصادقة والمرتبطة بهذا المجال , كما سجلنا مدى نجاعة  أداء مكتب حفظ الصحة على إثر التغييرات التي همت وظائف البنية البشرية , وتركيزه على استراتيجية واضحة تحدد مجال التدخل عبر مبدأ الأولويات  خصوصا في مجال محاربة الأوبئة , والحشرات ,وتفعيل شرطة المقابر , وتنظيم مجال نقل الموتى والجرحى  <br> 
+                       ونظرا لأهمية التواصل معكم فإننا ارتأينا تعزيزه عبر إحداث بوابة إلكترونية تمكننا منتخبون ومنتخبات / مواطنون ومواطنات من تتبع كل ما يجري بهذا المكتب، ناهيك عن تسهيل الولوج لمعلوماته، ومتابعة نشاطاته وفتح المجال لتقديم  المقترحات والملاحظات <br>
+                    نرجو أن تشكل وتحدث هذه البوابة  فارقا  في عمل الجماعة , من خلال المكتب الجماعي لحفظ الصحة الذي يسهر على تسيره نائب الرئيس السيد محمد الرزامي الذي نشكره على مجهوداته التي يقوم بها خدمة للصالح العام 
+                     </p></p>
+                     </div>
+                        <h6 style=" text-align:left;font-family: 'Lateef', serif; font-size:25px;padding-left: 400px;" > - الرئيس - </h6>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
 <!-- ================ testimonial section start ================= -->   
 
 
 
 
 
-<
+
+
+
+
+    
+    <!--================About Area End =================-->
     <!-- ================ testimonial section end ================= --> 
 
+ <!--================About  Area =================-->
+ <section class="about-area" id="about-area"style=" text-align:right;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="clearfix">
+                    <div class="about-content" style="font-size: 17px;">
+                        <h4 style=" text-align:center;font-family: 'Lateef', serif; "><strong>عن القسم الجماعي لحفظ الصحة</strong><br></h4>
+                        <h6 style=" text-align:center;font-family: 'Lateef', serif; font-size:25px;" >ماذا نقدم لرعايتكم</h6>
+                            <p style="font-size: 20px;font-family: 'Lateef', serif; ">&nbsp;&nbsp;
+                            يسهر المكتب الجماعي لحفظ الصحة التابع لجماعة العرائش على أحد اهم المهام التي تضطلع بها الجماعة ويتعلق الامر بإجراءات الوقاية وحفظ الصحة العامة وحماية البيئة 
+                           مفوض له إدارة القسم هذا غير مجموعة من الموظفين والتقنيين يزاولون مهام مراقبة المواد الغذائية المعروضة للعموم ومراقبة جميع المحلات والمؤسسات والفضاءات المتواجدة بالمدينة والتي يستعملها العموم وكذا الاماكن المخصصة لاستهلاك مواد غذائية كالمطاعم و الملبنات، و مراقبة الماء الشروب، و القيام بحملات للتطهير كمحاربة الحشرات الضارة و الفئران و محاربة داء السعر و الكلاب الضالة
+                          <br>
+                           [...] إضافة إلى مراقبة ومعاينة حالات الوفاة و تدبير المستودع البلدي للأموات                                             
+                           <br>
+                             <br>
+                             : على هذه البوابة كل المعلومات حول مجال تدخل المكتب الجماعي لحفظ الصحة التابع لجماعة العرائش في المجالات التالية 
+                             <ul  style="  text-align: center;font-family: 'Lateef', serif; ">
+                             <li><a href="/" style="color:#18d26e;">مراقبة حفظ الصحة -</a></li>
+                             <li ><a href="/" style="color:#18d26e;">محاربة النواقل -</a></li>
+                             <li><a href="/" style="color:#18d26e;">الطب الشرعي و مراقبة الوفيات -</a> </li>
+                             <li><a href="/" style="color:#18d26e;"> الطب الوقائي والاجتماعي -</a></li>
+                             </ul>
+                             
+                            </p>
+                    </div>
+                    
+                </div>
+                <a style="font-family: 'Lateef', serif; font-size:20px;text-align:left;"class="link_one" href="/definition">الإطلاع على التفاصيل</a>
 
-
+            </div>
+        </div>
+    </section>
 
     <!--================event Area=================-->
-    
+ <!--  
 <div class="container" >
   <a href="/nosEvenements" class="container">      
 <div class="event" >
@@ -322,110 +383,15 @@ height:100px;}
 
    </div>
 </a>
-</div>
+</div>-->
 
-    <!--================event Area End =================--> 
-    <!--================ Feature section start =================-->      
-  <!--  <section class="feature-section"style=" text-align:right;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card card-feature text-center text-lg-left">
-
-                            <h3 style=" text-align:center;" class="card-feature__title"><span class="card-feature__icon">
-                            تابعنا على صفحة الفيسبوك
-                                <i class='ti-facebook'></i>
-                            </span>
-                           </h3>
-                            <p style=" text-align:right"; class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-feature text-center text-lg-left">
-
-                            <h3 style=" text-align:center;"  class="card-feature__title"><span class="card-feature__icon">
-                            رقم الهاتف
-                                <i class="ti-user"></i>
-                            </span></h3>
-                            <p style=" text-align:right";class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-feature text-center text-lg-left">
-
-                            <h3 style=" text-align:center;"  class="card-feature__title"><span class="card-feature__icon">
-                            أين تجدنا
-                            <i class="ti-map-alt"></i>
-                            </span></h3>
-                            <p  style=" text-align:right;"class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>-->
-    <!--================ Feature section end =================-->  
-     
-
-    
-    
-    <!--================ Service section start =================-->  
-<!--
-    <div class="service-area area-padding-top">
-        <div class="container">
-         <div class="area-heading row">
-               <div class="col-md-5 col-xl-4">
-               
-                </div>
-                <h3><a href="/nos-services">Nos services</a></h3> 
-            
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                        <i class="flaticon-brain"></i>
-                        
-                            
-                        </span>
-                        <h3 class="card-service__title">service1</h3>
-                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
-                        <a class="card-service__link" href="#">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                            <i class="flaticon-tooth"></i>
-                        </span>
-                        <h3 class="card-service__title">service2</h3>
-                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
-                        <a class="card-service__link" href="#">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span class="card-service__icon">
-                            <i class="flaticon-face"></i>
-                        </span>
-                        <h3 class="card-service__title">service3</h3>
-                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
-                        <a class="card-service__link" href="#">Learn More</a>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>  -->  
-    <section class="ana-area text-center ana-padding" style=" text-align:right;">
+    <section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:100px">
     
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
           
-                <h2> <a href="/nos-services" style="color:#000;font-weight: bold; ">خدماتنا</a> </h2>
+                <h2> <a href="/nos-services" style="color:#000;font-weight: bold;  ">خدماتنا</a> </h2>
              </div>
                 
             </div>
@@ -441,126 +407,136 @@ height:100px;}
          <div style=" text-align:right;"class="col-md-6 col-lg-4" >
                
      </div>
+
+    <div style="margin-bottom:50px;">
                
-             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span style="" class="card-service__icon">
-                        <i class="flaticon-face"></i>
-                            
-                        </span>
-                        <h3 style=" text-align:right;" class="card-service__title">الخدمة 3</h3>
-
-                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
-                        <a style=""class="card-service__link" href="#">اقرأ المزيد</a>
-                    </div>
-             </div>
-
+             <div class="row" >
+                
              <div class="col-md-6 col-lg-4">
                     <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span style="" class="card-service__icon">
-                        <i class="flaticon-face"></i>
+                    <span style="" class="">
+                    <a href="/desordonnes">
+                    <img src="../img/banner/fou.jpg" style=";">
                            
                         </span>
-                        <h3 style=" text-align:right;" class="card-service__title">الخدمة 2</h3>
-
-                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
-                        <a style=" text-align:right;"class="card-service__link" href="#">اقرأ المزيد</a>
+                        <h3 style=" text-align:center;" class="card-service__title">رعاية المختلين</h3>
+                        </a>
+                        <a style=" text-align:right;"class="card-service__link" href="/desordonnes">الإطلاع على التفاصيل </a>
                     </div>
              </div>
 
              <div class="col-md-6 col-lg-4">
                     <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                        <span style="" class="card-service__icon">
-                        <i class="flaticon-face"></i>
+                            <span style="" class="">
+                            <img src="../img/banner/sa3ar.jpg" style="">
                             
                         </span>
-                        <h3 style=" text-align:right;" class="card-service__title">الخدمة 1</h3>
-
-                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
-                        <a style=" text-align:right;"class="card-service__link" href="#">اقرأ المزيد</a>
+                        <a href="/Ramassage-des-chiens-et-chats-errants">
+                        <h3  style=" text-align:center;" class="card-service__title">مركز محاربة داء السعر</h3>
+</a>
+                        <a style=""class="card-service__link" href="/Ramassage-des-chiens-et-chats-errants">الإطلاع على التفاصيل </a>
                     </div>
              </div>
 
-            </div>
-        </div>
-    </div> 
-    
-    <!--================ Service section end =================-->      
-<!-- ================ testimonial section start ================= -->   
-
-
-
-<!--
-
-<section class="testimonial" >
-<section style="background-color:transparent;" class="ana-area text-center ana-padding">
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 style="color:#000;font-weight:bold;">كلمة الرئيس</h2>
+         
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="">
+                        <a href="/ambulance">
+                        <img src="../img/banner/ambulance.jpg" style="">
+                        </span>
+                        <h3 style=" text-align:center;" class="card-service__title"> سيارات نقل المرضى و الموتى</h3>
+                        </a>
+                        <a style=" text-align:right;"class="card-service__link" href="/ambulance">الإطلاع على التفاصيل </a>
+                    </div>
              </div>
-                
-            </div>
-        </div>
+         
+             
 
-    
-</section>
-<div class="container">
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class=" owl-theme" >
-                    <div class="item">
-                        <div class="testi_item">
-                   
-                    
-                      
-                            <div class="testimonial_image" >
-                                
-                                    <img src="img/elements/tes1.jpg" alt="" style="width:100%; padding=0px;">
-                                    <h4 style="text-align: center;padding: 10px 20px; >" >- Dr. Suzanne Holroyd -</h4>  
-                               
-                            </div>
-
-                    
-                        
-                     
-                         </div>
-                     </div>   
-                 </div>
-              </div>
-
-
-
-            <div class="col-sm-8" >
             
-                <p >
-                 <div class="accolade"style=" text-align:right;">„</div><br>
-                  Saw kind fruitful itself in man. All in life good wherein beginning their he air That, 
-                  the saw very years created for seed have without. Can't him fowl his can not ready for game 
-                 </p>
-                 <div style=" text-align:right;"class="accolade-2"style=" text-align:left;">‘‘</div>
-                <p style=" text-align:right;">-كلمة رئيس القسم-</p>
-                 <a class="card-service__link" href="#">اقرأ المزيد</a>
-                 
-                 
+            
+        </div>
+   </div>
+    
+
+
+
+
+    <div class="row">
                 
-                 
-                 
-                 
+          <!--   <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="">
+                        
+                        <img src="../img/banner/deces1.jpg" style=";"> 
+                        </span>
+                        <a  href="/corde"><h3  style=" text-align:center;" class="card-service__title"> التعزيات</h3></a>
+                        
+                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
+                        <a style=""class="card-service__link" href="#">الإطلاع على التفاصيل</a>
+                    </div>
+             </div>-->
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="">
+                        
+                        <img src="../img/blog/1.jpg" style=";"> 
+                        </span>
+                        <a  href="/"><h3  style=" text-align:center;" class="card-service__title">محاربة البعوض
+</h3></a>
+                        
+                        <a style=""class="card-service__link" href="#">الإطلاع على التفاصيل</a>
+                    </div>
+</div>
+
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="">
+                        
+                        <img src="../img/banner/article.png" style="">
+                           
+                        </span>
+                        <a href="/permission">     <h3 style=" text-align:center;" class="card-service__title"> مسطرة الحصول على رخصة الدفن و شهادة الوفاة</h3></a>
+
+                        <a style=" text-align:right;"class="card-service__link" href="/permission">الإطلاع على التفاصيل</a>
+                    </div>
+             </div>
+
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="">
+                        <img src="../img/banner/cordoleance.jpg" style=";">
+                           
+                        </span>
+                        <a href="/cimetiere"> <h3 style=" text-align:center;" class="card-service__title">تدبير المقابر </h3></a>
+                        <a style=" text-align:right;"class="card-service__link" href="/cimetiere">الإطلاع على التفاصيل</a>
+                    </div>
+             </div>
+
+
+             
+
             </div>
+            
         </div>
     </div> 
     
-</div>
-</section>-->
 
-    <!-- ================ testimonial section end ================= --> 
+    </div> 
+    </div>
 
-     <!--================ Start Blog Area =================-->
+
+
+
+
+
+
+
+
+
+
+<!-------------------- blog area---->
+
 
 
 
@@ -574,7 +550,7 @@ height:100px;}
         <div class="row">
             <div class="col-lg-12">
           
-                <h2 style="color:#000;font-weight: bold;x">أهم المقالات</h2>
+                <h2 style="color:#000;font-weight: bold;"> مهام</h2>
              </div>
                 
             </div>
@@ -600,7 +576,7 @@ height:100px;}
                 <div class="col-md-6 col-lg-4 col-md-4">
                     <div class="single-blog"style=" border-bottom: 1px solid #797979 ;">
                         <div class="thumb">
-                            <img class="img-fluid"  style="margin-bottom:13px;"src="img/blog/1.jpg" alt="">
+                            <img class="img-fluid"  style="margin-bottom:13px;"src="../img/banner/press.jpg" alt="">
                         </div>
                         <div class="short_details">
 
@@ -610,8 +586,9 @@ height:100px;}
                                 <a href="#"></a>
                             </div>-->
                             
-                            <a class="d-block" href="/Lutte-antivectorielle">
-                                <h4 style="text-align:center;">Lutte antivectorielle</h4>
+                            <a class="d-block" href="/press1">
+                                <h4 style="text-align:center;"> </h4>
+                                صحافة
                             </a>
 
                             <!--<div class="meta-bottom d-flex">
@@ -654,7 +631,7 @@ height:100px;}
                                 <a href="#"></a>
                             </div>-->
                             <a class="d-block" href="single-blog.html">
-                                <h4 style="text-align:center;">Also good after there saying </h4>
+                                <h4 style="text-align:center;">المراقبة الصحية</h4>
                             </a>
                               <!--<div class="meta-bottom d-flex">
                                 <a href="#"><i class="ti-comments"></i>08 comment</a>
@@ -668,6 +645,75 @@ height:100px;}
         </div>
     </section>
     <!--================ End Blog Area =================-->
+
+    <section class="blog-area area-padding">
+        
+        <div class="container">
+            
+     <section class="ana-area text-center ana-padding">
+    <a href="/corde">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+          
+                <h2 style="color:#000;font-weight: bold;"> التعزيات</h2>
+             </div>
+                
+            </div>
+        </div>
+
+    
+</section>
+    
+  <div class="yusra">
+                    
+                        <article class="blog_item">
+                            <div class=" ">
+                                <div class="uu" style="height:400px;padding-right:100px;padding-bottom:70px;font-size:25px;padding-top:2px;font-weight: bold;padding-right:28px;color:#0f0f0f;direction:rtl;text-align:right;">
+                                            <br> المملكة المغربية                                                                                              
+                                            <br>  وزارة الداخلية
+                                            <br>  ولاية جهة طنجة تطوان الحسيمة
+                                            <br> عمالة إقليم العرائش
+                                            <br>  جماعة العرائش
+                                            <br>  مديرية المصالح 
+                                            المكتب الجماعي لحفظ الصحة
+                                                <br><br>
+                                    <?php
+                                    $text = str_replace("<br />", "", $laatsteposts->contenu );
+                                    ?>
+                                    <br><br><br>
+                                    <div class="text-center" >
+                                        <p >{!! nl2br(e($text)) !!}</p>
+                                    </div>
+                                    <div class ="text-center" style="text-align:center;padding-right:15px;">
+                                   
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </article>
+                    
+                </div>
+            
+
+
+
+</a>
+
+ <!--  
+<div class="container" >
+  <a href="/nosEvenements" class="container">      
+<div class="event" >
+       
+       <h1 class="card-feature__title"><span class="card-feature__icon"style="font-size:35px;color:#000;" >
+       أهم أنشطتنا
+       <i class="ti-bookmark-alt"style="font-size:35px;"></i>
+             
+       </span>
+
+   </div>
+</a>
+</div>-->
    <!--================ Feature section start =================-->      
    <section class="feature-section"style=" text-align:right;">
             <div class="container">
@@ -690,7 +736,8 @@ height:100px;}
                             رقم الهاتف
                                 <i class="ti-user"></i>
                             </span></h3>
-                            <p style=" text-align:right";class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
+                            <p style=" text-align:center";class="card-feature__subtitle">+212 6 60 04 96 03 </p>
+                            <p style=" text-align:center";class="card-feature__subtitle">+212 6 53 09 16 66 </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -706,79 +753,6 @@ height:100px;}
                 </div>
             </div>
     </section>
-    <!--================ Feature section end =================-->  
-    <!--================ Team section start =================-->  
-    <!--<section class="team-area area-padding">
-        <div class="container">
-            <div class="area-heading row">
-                <div class="col-md-5 col-xl-4">
-                    <h3>Notre equipe</h3>
-                </div>
-                <div class="col-md-7 col-xl-8">
-                   
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/1.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Adam Brain</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
-                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
-                                <ul class="card-team__social">
-                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                    <li><a href="#"><i class="ti-skype"></i></a></li>
-                                </ul> 
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/2.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Blian Judge</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
-                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
-                                <ul class="card-team__social">
-                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                    <li><a href="#"><i class="ti-skype"></i></a></li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/3.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Blian Judge</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
-                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
-                                <ul class="card-team__social">
-                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                    <li><a href="#"><i class="ti-skype"></i></a></li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
 
 
     <section class="ana-area text-center ana-padding  ">
@@ -795,26 +769,24 @@ height:100px;}
 
     
 </section>
-
-
-
-    <section class="team-area area-padding">
+<!--============================Team work========================================-->
+<div class="service-area area-padding-top" style=" text-align:right;">
         <div class="container">
-            <div class="area-heading row">
-           
-                <div class="col-md-7 col-xl-8">
-                   
-                </div>
-            </div>
+         <div style=" text-align:right;"class="area-heading row">
+         <div style=" text-align:right;"class="col-md-6 col-lg-4" >
+               
+     </div>
+               
+             <div class="row">
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="card-service__icon">
+                        <i class="ti-user" style="font-size: 50px;"></i>
+                        </span>
+                        <h4 style=" text-align:right;" class="card-service__title"> Serroukh Yousra</h4>
 
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/1.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Adam Brain</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
+                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
+                        <div class="team-footer d-flex justify-content-between">
                                 <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
                                 <ul class="card-team__social">
                                     <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -822,18 +794,19 @@ height:100px;}
                                     <li><a href="#"><i class="ti-instagram"></i></a></li>
                                     <li><a href="#"><i class="ti-skype"></i></a></li>
                                 </ul> 
-                            </div> 
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/2.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Blian Judge</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="card-service__icon">
+                        <i class="ti-user" style="font-size: 50px;"></i>
+                        </span>
+                        <h4 style=" text-align:right;" class="card-service__title"> Shaymae Iken</h4>
+
+                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
+                        <div class="team-footer d-flex justify-content-between">
                                 <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
                                 <ul class="card-team__social">
                                     <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -841,18 +814,19 @@ height:100px;}
                                     <li><a href="#"><i class="ti-instagram"></i></a></li>
                                     <li><a href="#"><i class="ti-skype"></i></a></li>
                                 </ul> 
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card card-team">
-                        <img class="card-img rounded-0" src="img/team/3.jpg" alt="">
-                        <div class="card-team__body text-center">
-                            <h3><a href="#">Dr Blian Judge</a></h3>
-                            <p>Cardiologist</p>
-                            <div class="team-footer d-flex justify-content-between">
+             <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span style="" class="card-service__icon">
+                        <i class="ti-user" style="font-size: 50px;"></i>
+                        </span>
+                        <h4 style=" text-align:right;" class="card-service__title"> Amal krimi</h4>
+
+                        <p style=" text-align:right;"class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
+                        <div class="team-footer d-flex justify-content-between">
                                 <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
                                 <ul class="card-team__social">
                                     <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -860,31 +834,33 @@ height:100px;}
                                     <li><a href="#"><i class="ti-instagram"></i></a></li>
                                     <li><a href="#"><i class="ti-skype"></i></a></li>
                                 </ul> 
-                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </section>
-    <!--================ Team section end =================-->  
+    </div> 
     
+<!--=====================================Team work===========================================================-->
 
     
 
     <!-- ================ Hotline Area Starts ================= -->  
-    <section class="hotline-area text-center area-padding">
+    <section class="hotline-area text-center area-padding" style="margin-top:100px">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>القسم الجماعي لحفظ الصحة</h2>
-                        <span>06 256 567 550</span>
-                        <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
-                    </div>
+                        <h2 style="font-size:50px;">القسم الجماعي لحفظ الصحة</h2>
+                       
+                        <span>+212 6 53 09 16 66</span>
+                       <!-- <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
+-->  </div>
                 </div>
             </div>
         </section>
         <!-- ================ Hotline Area End ================= --> 
+
 
 
 
@@ -913,5 +889,7 @@ height:100px;}
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/mail-script.js"></script>
 <script src="js/theme.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 </body>
 </html>

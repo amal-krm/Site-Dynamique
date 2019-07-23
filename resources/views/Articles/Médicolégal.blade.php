@@ -1,89 +1,115 @@
 
-@extends('layouts.single-blog')
-@section('title' , 'Médicolégal')
-@section('articles')
-article
-<div class="feature-img">
-                        <img class="img-fluid" src="img/blog/main-blog/m-blog-1.jpg" alt="">
-                    </div>
-@endsection
+<html lang="fr">
 
-@section('Commentaire')
+<head>
 
+  <meta charset="utf-8">
 
+  <title>Hygiène alimentaire</title>
 
-<div class="container">
-<?php $a=0;?>
-   @foreach($comments as $comment)
-   @if($comment->post_id==4)
-   
-   <?php $a=$a+1;?>
-   @endif
-   @endforeach
-   
- 
-    <div class="row">
-     <div class="col-md-8 col-md-offset-2"> 
-     <h3 class="comments-title"><i class="ti-comment"></i>{{$a}}comments</h3>
-    @foreach($comments as $comment)
-     @if($comment->post_id==4)
-       
-     <div class="comment">
-      <div class="author-info">
-      <img src="https://www.gravatar.com/avatar/.md5(strtolower(trim($comment->email))).?s=50&d=identicon" alt="" class="author-image">
-      <div class="author-name" > 
-      <h4><strong>{{$comment->name}}</strong>  </h4>
-     <p class="author-time"> {{$comment->created_at}}</p>
-      </div>
-      </div>  
-      <div class="comment-content">
-      {{$comment->comment}}
-      </div>                       
-                
-     </div>    
-    @endif
-    @endforeach 
-    </div>
-    </div>
   
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+
+<!-- Popper JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+
+
+				<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+                ul.b {
+  list-style-type: circle;
+  padding-left:45px;
+}
+                
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+            }
+           .text p{
+                text-indent: 50px;
+            }
+            
+		</style>
+
+ </head>
+
+<body>
+
+@extends('layouts.single-blog')
+<!--================Home Banner Area =================-->
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
     
-   
-</div>
-                             
-<div class="comment-form">
-    <h4>Laisser un commmentaire</h4>
-    <form class="form-contact comment_form" action="{{ route('comments.store',['id'=>4])}}"  method="post" id="commentForm">
-    {{Csrf_field()}}
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="Ecrire un commentaire"></textarea>
-                </div>
+            <div class="col-lg-12">
+          
+            <h2>Médicolégal</h2>
+             </div>
+                
             </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input class="form-control" name="name" id="name" type="text" placeholder="Nom">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input class="form-control" name="email" id="email" type="email" placeholder="Email">
-                </div>
-            </div>
-           <!-- <div class="col-12">
-                <div class="form-group">
-                    <input class="form-control" name="website" id="website" type="text" placeholder="Website">
-                </div>
-            </div>-->
         </div>
-        <div class="form-group">
-            <button type="submit" class="button button-contactForm">Send Message</button>
-        </div>
-    </form>
-</div>
+
+    
+</section>
+
+<!--================End Home Banner Area =================-->
+
+@section('articles')
 
 @endsection
-
-
-
-

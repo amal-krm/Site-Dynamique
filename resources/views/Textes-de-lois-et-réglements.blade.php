@@ -64,6 +64,10 @@ font-size: 50px;
     border-bottom: 2px solid #3CB371;
     margin:50px;
 }
+.img-fluid{
+    width:25%;
+    height: 200px;
+}
 
 </style>
 </head>
@@ -99,7 +103,7 @@ font-size: 50px;
             <div class="col-lg-12">
           
                 <h2> <a href="/nos-services" style="color:#000;font-weight: bold;"
-                 >نصوص القوانين</a> </h2>
+                 > قوانين و مساطر</a> </h2>
              </div>
                 
             </div>
@@ -135,10 +139,10 @@ font-size: 50px;
                 <div class="col-md-6 col-lg-4 col-md-4">
                     <div class="single-blog">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/" alt="">
+                            <img class="img-fluid" src="img/texte-loi/113.14.jpg" alt="">
                         </div>
                         <div class="short_details">
-                            <a class="d-block" href="single-blog.html">
+                            <a class="d-block" href="https://drive.google.com/file/d/1-y-8fbBjUZhAWRF516SpQqDrJzVfOpwJ/view?usp=sharing">
                                 <h4>Charte communale</h4>
                             </a>
                             

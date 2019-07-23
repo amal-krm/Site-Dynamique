@@ -1,0 +1,164 @@
+
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  
+
+  
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+
+<!-- Popper JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+
+
+				<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+                ul.b {
+  list-style-type: circle;
+  padding-left:45px;
+}
+                
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+            }
+           .text p{
+                text-indent: 50px;
+            }
+
+
+            table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+.img-fluid{
+    width:2px;
+    height: 2px;
+}
+            
+		</style>
+
+ </head>
+
+<body>
+
+@extends('layouts.single-blog')
+<!--================Home Banner Area =================-->
+
+-->
+
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-100px;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+          
+            <h2  style="font-size:30px;" > تدبير المقابر الاسلامية
+</h2>
+             </div>
+                
+            </div>
+        </div>
+
+    
+</section>
+<!--================End Home Banner Area =================-->
+
+@section('articles')
+
+<!--<div class="feature-img">
+                        <img class="img-fluid" src="img/blog/main-blog/m-blog-1.jpg" alt="">
+                    </div>-->
+                    <div class="text p-5" >
+	
+                   
+                    <div class="entry" style="direction:rtl;margin-top:-1px;text-align:justify;font-size:30px;">
+                    <div class="d-flex justify-content-center" >
+                        <div class="row">
+                                
+                                    <div class="single-blog">
+                                        <div class="thumb">
+                                        <a href="https://drive.google.com/file/d/1O586wCZn9gfuu5-1TYmYCyXJ4qRKLyQc/view?usp=sharing">
+                                            <img class="img-fluid" src="img\texte-loi\ma9abir.jpg" style="width:400px;height: 400px;">
+                                        </a>
+                                        </div>
+                                        <div class="short_details">
+                                            <a class="d-block" href="https://drive.google.com/file/d/1O586wCZn9gfuu5-1TYmYCyXJ4qRKLyQc/view?usp=sharing">
+                                                <h4>منشور وزير الداخلية حول تدبير المقابر الاسلامية</h4>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                   
+                </div>
+
+</div><!-- /.post -->
+
+
+<!-- You can start editing here. -->
+
+@endsection

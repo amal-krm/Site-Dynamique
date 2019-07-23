@@ -44,6 +44,7 @@ class deceController extends Controller
         //
         $dece = new dece();
         $dece->contenu = $request->input('contenu');
+       
         $dece->save();
         return redirect('/dece');
     }
@@ -100,5 +101,11 @@ class deceController extends Controller
         $dece->delete();
         Session::flash('message', 'Activite Supprimer !');
         return redirect('/dece');
+    }
+    public function dernier()
+    {
+        $laatsteposts = dece::latest()->first();
+
+   return view('index')->with('laatsteposts', $laatsteposts);
     }
 }

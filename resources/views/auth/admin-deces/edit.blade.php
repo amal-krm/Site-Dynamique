@@ -15,7 +15,10 @@
 <form action="{{ url('deces/'.$dece->id) }}" method="POST" >
             {{ method_field('PUT') }}  
             <label >Contenu des Condoléances :</label>
-            <input  class="form-control w-100" type="text" name="contenu" style="text-align:right;" value="{{ $dece->contenu}}">
+           
+            <textarea  class="form-control w-100" rows="10" type="text" name="contenu" style="text-align:right;direction:rtl">                                                                      
+            {{ $dece->contenu}}
+            </textarea>
         <div class="py-3">
         <button type="submit" class="btn btn-primary ">Modifier</button>
         </div>

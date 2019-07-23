@@ -88,10 +88,27 @@
 </head>
 <body>
 @extends('layouts.single-blog')
-@section('title' , 'Salubrité publique')
+
+<!--================Home Banner Area =================-->
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+          
+            <h2>Salubrité publique</h2>
+             </div>
+                
+            </div>
+        </div>
+
+    
+</section>
+
+<!--================End Home Banner Area =================-->
 @section('articles')
 <div class="text">
-<div class="entry">
+<div class="entry p-5">
 		<p style="text-align:justify;"><span style="color:#000000;">En matière de salubrité publique, le service de salubrité publique veille essentiellement sur la préservation de l’hygiène des collectivités, de l’hygiène industrielle et artisanale, il assure un contrôle sanitaire régulier des différents établissements non alimentaires dans le but de prévenir et remédier le cas échéant aux manquements d’hygiène et de maintenir un niveau satisfaisant de  salubrité et éviter toutes les nuisances et les éventuels dangers aux citoyens.</span></p>
 <p style="text-align:justify;"><span style="color:#000000;">Le service de salubrité publique veille sur :</span></p>
 <ul style="text-align:justify;">
@@ -118,83 +135,3 @@
         </div>
         </div>
 @endsection
-
-@section('Commentaire')
-
-
-
-<div class="container">
-<?php $a=0;?>
-   @foreach($comments as $comment)
-   @if($comment->post_id==2)
-   
-   <?php $a=$a+1;?>
-   @endif
-   @endforeach
-   
- 
-    <div class="row">
-     <div class="col-md-8 col-md-offset-2"> 
-     <h3 class="comments-title"><i class="ti-comment"></i>{{$a}}comments</h3>
-    @foreach($comments as $comment)
-     @if($comment->post_id==2)
-       
-     <div class="comment">
-      <div class="author-info">
-      <img src="https://www.gravatar.com/avatar/.md5(strtolower(trim($comment->email))).?s=50&d=identicon" alt="" class="author-image">
-      <div class="author-name" > 
-      <h4><strong>{{$comment->name}}</strong>  </h4>
-     <p class="author-time"> {{$comment->created_at}}</p>
-      </div>
-      </div>  
-      <div class="comment-content">
-      {{$comment->comment}}
-      </div>                       
-                
-     </div>    
-    @endif
-    @endforeach 
-    </div>
-    </div>
-  
-    
-   
-</div>
-                             
-<div class="comment-form">
-    <h4>Laisser un commmentaire</h4>
-    <form class="form-contact comment_form" action="{{ route('comments.store',['id'=>2])}}"  method="post" id="commentForm">
-    {{Csrf_field()}}
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="Ecrire un commentaire"></textarea>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input class="form-control" name="name" id="name" type="text" placeholder="Nom">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input class="form-control" name="email" id="email" type="email" placeholder="Email">
-                </div>
-            </div>
-           <!-- <div class="col-12">
-                <div class="form-group">
-                    <input class="form-control" name="website" id="website" type="text" placeholder="Website">
-                </div>
-            </div>-->
-        </div>
-        <div class="form-group">
-            <button type="submit" class="button button-contactForm">Send Message</button>
-        </div>
-    </form>
-</div>
-
-@endsection
-
-
-
-

@@ -64,14 +64,13 @@ Route::get('/Tout-Articles', function () {
 });
 
 
+
 /*================Articles ================== */
 
 
 /* ==============Normal Navbar =============  */
 //na9sa reclamation o contact
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','deceController@dernier' );
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -108,15 +107,38 @@ Route::post('contact', 'ContactFormController@store')->name('contact.store');
 /*--------------------------------------------*/ 
 
 /* ==============Normal Navbar =============  */
-
+Route::get('activities/{id}/autre' , 'activitieController@other')->middleware('auth');
+Route::get('activities/{id}' , 'activitieController@voir');
 
 /*==============De index=========== */
-
 
 /*==========start nos services ======*/
 Route::get('/nos-services', function () {
     return view('nos-services');
 });
+Route::get('/definition', function () {
+    return view('definition');
+});
+Route::get('/permission', function () {
+    return view('services.permission');
+});
 
+Route::get('/desordonnes', function () {
+    return view('services.desordonnes');
+});
+Route::get('/cimetiere', function () {
+    return view('services.cimetiere');
+});
+Route::get('/ambulance', function () {
+    return view('services.ambulance');
+});
 
 /*==========fin nos services ======*/
+
+
+Route::get('events/{id}/edit' , 'eventController@edit')->middleware('auth');
+Route::put('events/{id}' , 'eventController@update')->middleware('auth');
+Route::get('events/{id}/delete' , 'eventController@destroy')->middleware('auth');
+Route::get('events/{id}/autre' , 'eventController@other')->middleware('auth');
+Route::get('events/{id}' , 'eventController@voir');
+Route::get('/press1' , 'eventController@show');

@@ -14,16 +14,50 @@
 <form action="/activities" method="POST" enctype="multipart/form-data">
   <div class="form-row">
     <div class="form-group col-md-6">
+      <label >Titre de l'activite :</label>
+      <input type="text" class="form-control-file" name="titre" multiple>
       <label >Contenu de l'activite :</label>
-      <textarea class="form-control w-100" name="message"  cols="30" rows="9" name="contenu"></textarea>
+      <textarea class="form-control w-100" name="contenu"  cols="30" rows="9" name="contenu"></textarea>
+      <label >Date de l'activite :</label>
+      <input class="form-control" type="date"  name="date">
+      <div class="form-group col-md-6">
+      <label >Photo 1  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo1" multiple>
+      </div>
+      <div class="form-group col-md-6">
+      <label >Photo 2  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo2" multiple>
+      </div>
+      <div class="form-group col-md-6">
+      <label >Photo 3  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo3" multiple>
+      </div>
+      <div class="form-group col-md-6">
+      <label >Photo 4  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo4" multiple>
+      </div>
+      <div class="form-group col-md-6">
+      <label >Photo 5  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo5" multiple>
+      </div>
+      <div class="form-group col-md-6">
+      <label >Photo 6  de l'activite :</label>
+      <input type="file" class="form-control-file" name="photo6" multiple>
+      </div>
     </div>
-    <div class="form-group col-md-6">
-    <label >Photo  de l'activite :</label>
-    <input type="file" class="form-control-file" name="filePhoto" multiple>
-    </div>
-    <div class="form-group col-md-6">
-    <label >Video  de l'activite :</label>
-    <input type="file" class="form-control-file" name="fileVideo" multiple>
+      <div class="form-group col-md-6">
+        <label >Video 1 de l'activite :</label>
+        <input type="file" class="form-control-file" name="video1" multiple>
+        <label >Video 2 de l'activite :</label>
+        <input type="file" class="form-control-file" name="video2" multiple>
+        <label >Video 3 de l'activite :</label>
+        <input type="file" class="form-control-file" name="video3" multiple>
+        <label >Video 1 de Youtube :</label>
+        <input type="text" class="form-control-file" name="youtube1" multiple>
+        <label >Video 2 de Youtube :</label>
+        <input type="text" class="form-control-file" name="youtube2" multiple>
+        
+      </div>
     </div>
   </div>
   @if ($errors->any())

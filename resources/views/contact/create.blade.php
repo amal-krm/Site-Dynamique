@@ -202,7 +202,19 @@ font-size: 50px;
     </div>
     <!--================End Contact Success and Error message Area =================-->
 
-
+   <!-- ================ Hotline Area Starts ================= -->  
+   <section class="hotline-area text-center area-padding" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 style="font-size:40 px">BCH Larache</h1>
+                        
+                        <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================ Hotline Area End ================= --> 
 
     @endsection
 

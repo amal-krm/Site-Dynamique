@@ -555,13 +555,12 @@ background-color: #f9f9ff}
 /* 5. Banner */
 .banner-area {
  min-height: 800px;
- background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url("../img/banner/home-banner.jpg");
 
  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative; }
- @media (max-width: 767px) {
+ @media () {
     .banner-area {
       min-height: 600px; } }
   .banner-area h1 {
@@ -574,7 +573,7 @@ background-color: #f9f9ff}
     @media (max-width: 767px) {
       .banner-area h1 {
         font-size: 26px; } }
-  .banner-area p {
+  .p {
     margin-bottom: 50px; }
     @media (min-width: 576px) and (max-width: 767px) {
       .banner-area p {

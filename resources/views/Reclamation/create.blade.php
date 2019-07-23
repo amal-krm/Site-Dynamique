@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="ar">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -14,6 +15,18 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- mot de president css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <!--responsive column -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 </head>
 <style>
 .appointment-area{
@@ -38,8 +51,22 @@ h1 {
 @extends('layouts.gabarit')
 
 @section('content')
+
+        <!-- ================ Hotline Area Starts ================= -->  
+          
+                
+                    
+               
+                     
+                
+            
+       
+        <!-- ================ Hotline Area End ================= --> 
+
+
+
     <!--================ appointment Area Starts =================-->
-<section class="appointment-area area-padding-top">
+    <section class="appointment-area area-padding-top" style="margin-top:20px;">
     <div class="container">
     <div class="appointment-inner">
             <div class="row">
@@ -53,7 +80,6 @@ h1 {
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-align:center; color:#18d26e;">
                                     ما المقصود بالشكاية؟
                                     </button>
-
                                 </h5>
                             </div>
 
@@ -181,44 +207,28 @@ h1 {
 <!--================ appointment Area End =================-->
 
 
-        <!-- ================ Hotline Area Starts ================= -->  
-        <section class="hotline-area text-center area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 style="font-size:40 px">BCH Larache</h1>
-                        
-                        <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ================ Hotline Area End ================= --> 
-
-
-     
-
-        @endsection
+   
+    @endsection
 
 
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/theme.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>

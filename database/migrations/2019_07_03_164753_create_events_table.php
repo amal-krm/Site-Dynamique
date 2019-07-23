@@ -14,12 +14,22 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('events', function (Blueprint $table) {
+           
             $table->bigIncrements('id');
-            $table->string('titre')->nullable();
-            $table->date('date')->nullable();
             $table->longText('contenu')->nullable();
-            $table->string('filePhoto')->nullable();
-            $table->string('fileVideo')->nullable();
+            $table->string('filePhoto1')->nullable();
+            $table->string('filePhoto2')->nullable();
+            $table->string('filePhoto3')->nullable();
+            $table->string('filePhoto4')->nullable();
+            $table->string('filePhoto5')->nullable();
+            $table->string('filePhoto6')->nullable();
+            $table->string('fileVideo1')->nullable();
+            $table->string('fileVideo2')->nullable();
+            $table->string('fileVideo3')->nullable();
+            $table->string('fileYoutube1')->nullable();
+            $table->string('fileYoutube2')->nullable();
+            $table->string('Titre')->nullable();
+            $table->dateTime('Date')->nullable();
             $table->timestamps();
            
             
