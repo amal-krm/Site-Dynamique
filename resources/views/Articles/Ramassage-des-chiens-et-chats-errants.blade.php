@@ -4,8 +4,9 @@
 
   <meta charset="utf-8">
 
-  <title>Ramassage des chiens et chats errants</title>
 
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
   
 
   <link rel="stylesheet" href="style.css">
@@ -92,52 +93,55 @@
 @extends('layouts.single-blog')
 
 <!--================Home Banner Area =================-->
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-140px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2>Ramassage des chiens et chats errants</h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">Ramassage des chiens et chats errants</a> </h3>
+                <hr width="77%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
-
 <!--================End Home Banner Area =================-->
 @section('articles')
 <div class="text">
 <div class="entry p-5" >
-<img src="img/banner/sa3ar.jpg"style="padding-bottom:30px;margin-top:-50px;"class=" pl-5" >
-<p>Le tournant annoncé en 2002 relatif à la réforme de la charte communale et qui a instauré le principe de l’unité de ville a eu des conséquences directes sur la coordination de l’action en matière d’hygiène et de salubrité publique. Ce principe vise  à remédier à l’éparpillement des moyens et à la dispersion des actions et des efforts au sein d’un même espace par l’adoption de nouvelles formes de décisions collectives et la recherche de compromis autour d’actions d’hygiène. Ainsi tous les bureaux d’hygiène qui relevaient respectivement des ex communes se voient reconduits en tant qu’antennes d’hygiène dépendant directement du bureau communal d’hygiène (BCH) de la municipalité de la ville de Rabat permettant ainsi un meilleur encadrement sanitaire de la ville et ce, conformément à la circulaire du Ministre de l’Intérieur nº 133 du 18 octobre 2004. </p>
-<p>Dans cette perspective, l’espace urbain de la ville de Rabat,  reconfiguré récemment par le texte communal autour de l’unité de ville est devenu le lieu privilégié du déploiement d’actions novatrices à caractère préventif en matière d’hygiène et de salubrité publique  par le BCH, ces actions s’inscrivent dans une logique privilégiant la sensibilisation sur la sanction principalement axée sur des compagnes de sensibilisation et d’éducation sanitaire, visant en premier lieu la mise à niveau de l’état hygiénique des différents établissements alimentaires et non alimentaires et en deuxième lieu l’adoption d’une réglementation unique au niveau de la ville dans le but de normaliser les dispositions prises en cas de respect ou non-respect de la réglementation notamment la délivrance des attestations de conformité et de destruction, les avis sur plan, les mises en demeure, les propositions de fermeture ou réouverture, et afin d’éviter les emboîtements de contrôle des établissements par les différents intervenants.</p>
-<p>Ainsi, durant les cinq dernières années, l’action du BCH est prioritairement orientée vers l’amélioration des conditions sanitaires déplorables dans lesquelles se trouvait la majeure partie des établissements commerciaux en s’appuyant sur une équipe composée de médecins, de techniciens d’hygiène, de laborantins, un personnel administratif et sur des moyens matériels et logistiques.</p>
-<p>Les efforts déployés par cette équipe aussi indispensables soient-ils, ne peuvent être suffisants sans l’implication des professionnels et des citoyens. En effet, le contrôle d’hygiène ne peut être relégué unilatéralement aux instances de contrôle, il faut une implication active des citoyens et des  professionnels par des autos formations dans les domaines inhérents aux   bonnes pratiques d’hygiène. </p>
-<p>La formation du personnel manipulateur des denrées alimentaires relève essentiellement de la responsabilité des chefs d’établissements, toutefois, les techniciens d’hygiène participent à cette action de formation à l’occasion de leurs inspections, en répondant aux interrogations des professionnels, en leur apprenant à identifier les risques que leurs activités peuvent présenter pour la santé des consommateurs, et en déterminant avec eux les moyens à mettre en œuvre pour maîtriser ces risques.   </p>
-<p>Le contrôle d’hygiène et de salubrité publique incarne bien évidemment une des clés de voûte de notre société et est indissociablement lié aux services relevant du BCH. Ce contrôle constitue d’ailleurs un défi permanent, relevé quotidiennement par l’ensemble de nos fonctionnaires, même si des efforts sont là,  beaucoup restent à faire. Il faudrait recruter du personnel qualifié en nombre suffisant et doter les médecins et techniciens d’hygiène des moyens matériels et logistiques nécessaires pour qu’ils fassent leur travail dans de bonnes conditions ”, tout ceci demande une implication effective de l’ensemble des intervenants à différents échelons de décision. “Nous comptons bien y arriver ”.</p>
-
+<img src="img/banner/sa3ar.jpg"style="padding-bottom:30px;margin-top:-50px;width:70%;margin-left:100px;"class=" pl-5" >
+<p style="text-align:justify;"><span style="color:#000000;">Le service de ramassage des chats et chiens errants relève de la Division d’Hygiène et de Salubrité Publique.</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">Les chiens errants (Tout chien abandonné, livré à son seul instinct, est en état de divagation) et les chats sont capturés sur la voie publique étant donné qu’ils constituent un danger pour la population et une source de maladies graves (tétanos, rage, …).</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">La plupart des interventions du service sont motivées par des plaintes émanant des citoyens ou par les réclamations des différentes annexes administratives et arrondissements de police de la ville de Larache, tout en précisant que l&rsquo;abattage systématique des chats et chiens errants n&rsquo;est pas adopté.</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">Dans l’exercice de leur activité et pour faire face aux risques, les agents de capture sont suffisamment dotés des différents moyens de protection à savoir des gants renforcés, des lunettes de protection et des bottes en plus de matériels adaptés tels que les lassos de capture, les pinces, et les cages.</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">De plus, la vaccination préventive des agents est de rigueur ainsi que des examens médicaux périodiques.</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">Tous les chiens et chats capturés (sur la voie publique) ou récupérés (abandonnés par leurs propriétaires) sont admis à la fourrière municipale de Larache, sous la surveillance effective du vétérinaire.</span></p>
+<p style="text-align:justify;"><span style="color:#000000;">En outre, ce service procède à la collecte des cadavres de chiens, l’enlèvement de ces derniers est réalisé le plus rapidement possible après la réception de la réclamation puis remis au service vétérinaire qui dispose des moyens nécessaires (incinérateur, &#8230;) et des procédures pour leur élimination.</span></p>
         
 
+<div class="entry" style="direction:rtl;margin-top:-1px;text-align:justify;font-size:30px;">
+                    <div class="d-flex justify-content-center" >
+                        <div class="row">
+                                
+                                    <div class="single-blog">
+                                        <div class="thumb">
+                                        <a href="https://drive.google.com/file/d/1NciZBdNNtZc0QfhoYBk1eh0I4FE6Mscd/view?usp=sharing" target="_blank">
+                                            <img class="img-fluid" src="img\texte-loi\sa3ar.JPG" style="width:400px;height: 400px;">
+                                        </a>
+                                        </div>
+                                        <div class="short_details">
+                                            <a class="d-block" href="https://drive.google.com/file/d/1NciZBdNNtZc0QfhoYBk1eh0I4FE6Mscd/view?usp=sharing" target="_blank">
+                                                <h4>البرنامج الوطني لمحاربة داءالسعر</h4>
+                                            </a>
+                                            
+                                        </div>
+                                        <img class="img-fluid" src="img\texte-loi\sa3ar.png" style="width:400px;height: 400px;">
+                                    </div>
+                                </div>
+                        </div>
   </div>
     </div> 
 
 
-  <!-- <div>
-        </div>
-<div class="entry">
-		<p><i>Le tournant annoncé en 2002 relatif à la réforme de la charte communale et qui a instauré le principe de l’unité de ville a eu des conséquences directes sur la coordination de l’action en matière d’hygiène et de salubrité publique. Ce principe vise  à remédier à l’éparpillement des moyens et à la dispersion des actions et des efforts au sein d’un même espace par l’adoption de nouvelles formes de décisions collectives et la recherche de compromis autour d’actions d’hygiène. Ainsi tous les bureaux d’hygiène qui relevaient respectivement des ex communes se voient reconduits en tant qu’antennes d’hygiène dépendant directement du bureau communal d’hygiène (BCH) de la municipalité de la ville de Rabat permettant ainsi un meilleur encadrement sanitaire de la ville et ce, conformément à la circulaire du Ministre de l’Intérieur nº 133 du 18 octobre 2004. </i></p>
-<p><i>Dans cette perspective, l’espace urbain de la ville de Rabat,  reconfiguré récemment par le texte communal autour de l’unité de ville est devenu le lieu privilégié du déploiement d’actions novatrices à caractère préventif en matière d’hygiène et de salubrité publique  par le BCH, ces actions s’inscrivent dans une logique privilégiant la sensibilisation sur la sanction principalement axée sur des compagnes de sensibilisation et d’éducation sanitaire, visant en premier lieu la mise à niveau de l’état hygiénique des différents établissements alimentaires et non alimentaires et en deuxième lieu l’adoption d’une réglementation unique au niveau de la ville dans le but de normaliser les dispositions prises en cas de respect ou non-respect de la réglementation notamment la délivrance des attestations de conformité et de destruction, les avis sur plan, les mises en demeure, les propositions de fermeture ou réouverture, et afin d’éviter les emboîtements de contrôle des établissements par les différents intervenants.</i></p>
-<p><i>Ainsi, durant les cinq dernières années, l’action du BCH est prioritairement orientée vers l’amélioration des conditions sanitaires déplorables dans lesquelles se trouvait la majeure partie des établissements commerciaux en s’appuyant sur une équipe composée de médecins, de techniciens d’hygiène, de laborantins, un personnel administratif et sur des moyens matériels et logistiques.</i></p>
-<p><i>Les efforts déployés par cette équipe aussi indispensables soient-ils, ne peuvent être suffisants sans l’implication des professionnels et des citoyens. En effet, le contrôle d’hygiène ne peut être relégué unilatéralement aux instances de contrôle, il faut une implication active des citoyens et des  professionnels par des autos formations dans les domaines inhérents aux   bonnes pratiques d’hygiène. </i></p>
-<p><i>La formation du personnel manipulateur des denrées alimentaires relève essentiellement de la responsabilité des chefs d’établissements, toutefois, les techniciens d’hygiène participent à cette action de formation à l’occasion de leurs inspections, en répondant aux interrogations des professionnels, en leur apprenant à identifier les risques que leurs activités peuvent présenter pour la santé des consommateurs, et en déterminant avec eux les moyens à mettre en œuvre pour maîtriser ces risques.   </i></p>
-<p><i>Le contrôle d’hygiène et de salubrité publique incarne bien évidemment une des clés de voûte de notre société et est indissociablement lié aux services relevant du BCH. Ce contrôle constitue d’ailleurs un défi permanent, relevé quotidiennement par l’ensemble de nos fonctionnaires, même si des efforts sont là,  beaucoup restent à faire. Il faudrait recruter du personnel qualifié en nombre suffisant et doter les médecins et techniciens d’hygiène des moyens matériels et logistiques nécessaires pour qu’ils fassent leur travail dans de bonnes conditions ”, tout ceci demande une implication effective de l’ensemble des intervenants à différents échelons de décision. “Nous comptons bien y arriver ”.</i></p>
-<p><i> </i></p>
-<p><b><i>   
-</div>   
-</div>  --> 
+
    
                    
 @endsection

@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+    <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -64,41 +65,32 @@ font-size: 50px;
 </head>
 <body>
 
-@extends('layouts.gabarit')
+@extends('layouts.gabarit1')
 
 @section('content')
 
  
  <!--================Home Banner Area =================-->
- <section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:200px">
-    
+ <section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-180px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-                <h2> <a href="" style="color:#000;font-weight: bold;"
-                 >تواصل معنا</a> </h2>
-                 <div class="page_link">
-              
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">تواصل معنا</a> </h3>
+                <hr width="17%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
-
-
    
     <!--================End Home Banner Area =================-->
 
 
   <!-- ================ contact section start ================= -->
-  <section class="contact-section area-padding">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-lg-8">
+  <section class="appointment-area area-padding-top" style="margin:100px;">
+    <div class="container" >
+      <div class="appointment-inner">
+      <div class="row" >
+        <div class="col-lg-8" style=" border-right: 1px solid #ddd ;">
         <h2 class="contact-title"style="text-align:right;" >املأ النموذج التالي</h2>
 
           <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
@@ -202,19 +194,7 @@ font-size: 50px;
     </div>
     <!--================End Contact Success and Error message Area =================-->
 
-   <!-- ================ Hotline Area Starts ================= -->  
-   <section class="hotline-area text-center area-padding" style="margin-top:100px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 style="font-size:40 px">BCH Larache</h1>
-                        
-                        <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ================ Hotline Area End ================= --> 
+ 
 
     @endsection
 

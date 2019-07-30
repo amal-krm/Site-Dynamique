@@ -4,9 +4,10 @@
 
   <meta charset="utf-8">
 
-  <title>Hygiène alimentaire</title>
+ 
 
-  
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
 
   <link rel="stylesheet" href="style.css">
 
@@ -90,19 +91,15 @@
 @extends('layouts.single-blog')
 
 <!--================Home Banner Area =================-->
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-140px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2>Salubrité publique</h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">Salubrité publique</a> </h3>
+                <hr width="37%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
 
 <!--================End Home Banner Area =================-->

@@ -115,7 +115,7 @@ Les Condoléances<a class="center2"href="/add-deces">Ajouter des Condoléances</
       <th scope="row">{{ $dece->id}}</th>
     
       <td>{{ $dece->contenu}}</td>
-      <td><a class="supprimer"href="{{ url('deces/'.$dece->id.'/delete')}}">Supprimer</a></td>
+      <td><a class="supprimer" onclick="return confirm('voulez-vous vraiment supprimer?')"href="{{ url('deces/'.$dece->id.'/delete')}}">Supprimer</a></td>
       <td><a class="modifier"href="{{url('deces/'.$dece->id.'/edit')}}">Modifier</a></td>
     </tr>
     @endforeach

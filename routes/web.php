@@ -34,7 +34,7 @@ Route::post('/deces' ,'deceController@store')->middleware('auth');
 Route::get('activities/{id}/edit' , 'activitieController@edit')->middleware('auth');
 Route::put('activities/{id}' , 'activitieController@update')->middleware('auth');
 Route::get('activities/{id}/delete' , 'activitieController@destroy')->middleware('auth');
-
+Route::get('/activities/activ/{filename}/{id}/{n}' , 'activitieController@deletpic')->middleware('auth');
 
 
 Route::get('deces/{id}/edit' , 'deceController@edit')->middleware('auth');
@@ -44,6 +44,7 @@ Route::get('deces/{id}/delete' , 'deceController@destroy')->middleware('auth');
 Route::get('events/{id}/edit' , 'eventController@edit')->middleware('auth');
 Route::put('events/{id}' , 'eventController@update')->middleware('auth');
 Route::get('events/{id}/delete' , 'eventController@destroy')->middleware('auth');
+Route::get('/events/eventi/{filename}/{id}/{n}' , 'eventController@deletpic')->middleware('auth');
 /*====================================================== */
 
 /*================Articles ================== */
@@ -51,13 +52,22 @@ Route::get('events/{id}/delete' , 'eventController@destroy')->middleware('auth')
 Route::get('Hygiène-alimentaire','CommentController@index1');
 Route::get('Salubrité-publique','CommentController@index2');
 Route::get('Lutte-antivectorielle','CommentController@index3');
-Route::get('Médicolégal','CommentController@index4');
+
 Route::get('Ramassage-des-chiens-et-chats-errants','CommentController@index5');
 Route::get('A-propos-de-l’hygiène','CommentController@index6');
 Route::get('Organigramme','CommentController@index7');
 Route::get('corde','CommentController@index8');
 Route::get('/Activité','CommentController@index9');
 Route::get('/nosEvenements','CommentController@index10');
+Route::get('/definition', 'CommentController@index11' );
+Route::get('/desordonnes', 'CommentController@index12' );
+Route::get('/permission', 'CommentController@index13' );
+Route::get('/cimetiere', 'CommentController@index14' );
+Route::get('/Lutte', 'CommentController@index15' );
+    
+Route::get('controle','CommentController@index4');
+
+
 Route::post('/comment/{id}',['uses'=>'CommentController@store','as'=>'comments.store']);
 Route::get('/Tout-Articles', function () {
     return view('Articles/Tout-Articles');
@@ -80,9 +90,6 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/about-us', function () {
-    return view('about-us');
-});
 
 Route::get('/reclamation', function () {
     return view('contact_process');
@@ -112,23 +119,11 @@ Route::get('activities/{id}' , 'activitieController@voir');
 
 /*==============De index=========== */
 
-/*==========start nos services ======*/
-Route::get('/nos-services', function () {
-    return view('nos-services');
-});
-Route::get('/definition', function () {
-    return view('definition');
-});
-Route::get('/permission', function () {
-    return view('services.permission');
-});
 
-Route::get('/desordonnes', function () {
-    return view('services.desordonnes');
-});
-Route::get('/cimetiere', function () {
-    return view('services.cimetiere');
-});
+
+
+
+
 Route::get('/ambulance', function () {
     return view('services.ambulance');
 });

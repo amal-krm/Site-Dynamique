@@ -5,7 +5,8 @@
 
   <meta charset="utf-8">
 
-  
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
 
   
 
@@ -93,10 +94,7 @@
 table, td, th {
   border: 1px solid black;
 }
-.img-fluid{
-    width:2px;
-    height: 2px;
-}
+
             
 		</style>
 
@@ -106,24 +104,19 @@ table, td, th {
 
 @extends('layouts.single-blog')
 <!--================Home Banner Area =================-->
-
--->
-
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-200px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-200px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2  style="font-size:30px;" ><strong> رعاية المختلين
-</strong></h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;"> رعاية المختلين</a> </h3>
+                <hr width="22%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
+
+
+
 <!--================End Home Banner Area =================-->
 
 @section('articles')
@@ -135,16 +128,17 @@ table, td, th {
         <p style="text-align:justify;color:#000;font-size:20px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">وحيث إن التدخل القبلي من أجل الوقاية الشاملة، بتأمين حماية المجتمع من التصرفات غير السوية للمرضى العقليين، وتسهيل عملية إيداعهم بمراكز العلاج في احترام كامل لحقوقهم وإنسانيتهم من بين أهم أدوار الشرطة الإدارية الممارسة من قبل المكاتب الجماعية لحفظ الصحة، فإن المكتب الجماعي لحفظ الصحة بجماعة العرائش مافتئ يكرس كامل جهوده من أجل معالجة ظاهرة انتشار المختلين عقليا والمشردين بتراب الجماعة بما سبقت الإشارة إليه من حفظٍ للكرامة وصونٍ للحقوق، وذلك بالشراكة مع باقي المتدخلين وفقا للقوانين الجاري بها العمل؛ خاصة وأن مدينة العرائش تعرف في بعض الأحيان بعض الإنزالات المدبرة لهؤلاء من عدد من المناطق الخارجة عن الجماعة.. وقد وفّر لذلك كل الإمكانيات المادية واللوجستية المتاحة، حتى يتسنى له القيام بهذا الواجب الإنساني بمسؤولية وسلاسة، وذلك وفق رؤية تتوخى جعل النظر إلى هذه الفئة يحكمه الاحترام، وتؤطره الإنسانية والالتزام. <br></p>
         <p style="font-size:50px;color:#18d26e ;direction:ltr;">،،</p>
         <p style="direction:ltr;color:#18d26e;font-size:20px;">- جماعة العرائش -</p>
+        <img src="../img/banner/fou.jpg" style="width:100%;border: 1px solid #ddd;border-radius: 4px;padding: 8px;">
         <div class="d-flex justify-content-center" >
             <div class="row">
                 <div class="single-blog">
                     <div class="thumb">
-                        <a href="https://drive.google.com/file/d/1Cf-GoGyouuCW8IGUj1pPyvOb19mzBMtD/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1Cf-GoGyouuCW8IGUj1pPyvOb19mzBMtD/view?usp=sharing" target="_blank">
                             <img class="img-fluid" src="img\texte-loi\mukhtalin.PNG" style="width:400px;height: 400px;">
                         </a>
                     </div>
                     <div class="short_details">
-                        <a class="d-block" href="https://drive.google.com/file/d/1Cf-GoGyouuCW8IGUj1pPyvOb19mzBMtD/view?usp=sharing">
+                        <a class="d-block" href="https://drive.google.com/file/d/1Cf-GoGyouuCW8IGUj1pPyvOb19mzBMtD/view?usp=sharing" target="_blank">
                             <h4>ظهير شريف رقم 1.58.295</h4>
                         </a>                     
                     </div>
@@ -153,15 +147,15 @@ table, td, th {
         </div>
         <p>
         <br><br>
-        <img src="img/1.png">
+        <img src="img/1.png" style="border: 1px solid #ddd;border-radius: 4px;padding: 8px;">
         </p>
         <p>
         <br><br>
-        <img src="img/2.png">
+        <img src="img/2.png" style="border: 1px solid #ddd;border-radius: 4px;padding: 8px;">
         </p>
         <p>
         <br><br>
-        <img src="img/3.png">
+        <img src="img/3.png" style="border: 1px solid #ddd;border-radius: 4px;padding: 8px;">
         </p>
     </div>
 </div><!-- /.post -->

@@ -38,8 +38,22 @@ font-weight:  10px;
 <body >
 <div class="center">
 <p style="text-align:right;">
-<a href="/activities" >retour </a></p>
+<a href="/events" >retour </a></p>
+@if(Session::has('message'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>Le titre est obligatoire</li>
+                <li>Les Medias sont trop large , vous devez le mettre dans la chaine youtube</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div style="font-size:20px;">
+
 <p ><strong  style="color:#2E8B57;">titre:</strong>&nbsp;&nbsp;{{ $event->Titre}}</p><br>
 <p><strong style="color:#2E8B57;">contenu:</strong>&nbsp;&nbsp;{{ $event->contenu }}</p><br>
 <p><strong style="color:#2E8B57;">date:</strong>&nbsp;&nbsp;{{ $event->Date}}</p><br>
@@ -109,27 +123,24 @@ font-weight:  10px;
 
     <tr>
     @if ( !empty ( $event->fileVideo1) ) 
-        <td><img style="height:100px;width:100px;"src="{{asset('storage/' .$event->fileVideo1) }}" class="img-thumbnail" style="width:400px;height:300px"></td>
         <td><video width="100px" height="100px" controls>
-            <source src="{{asset('storage/' .$event->video1) }}" type="video/mp4" />
+            <source src="{{asset('storage/' .$event->fileVideo1) }}" type="video/mp4" />
         </video></td>
       @else
         <td></td>
       
       @endif
       @if ( !empty ( $event->fileVideo2) ) 
-        <td><iframe width="200px" height="100px" src="{{asset('storage/' .$event->fileVideo2) }}" ></iframe>  </td>   
        <td><video width="100px" height="100px" controls>
-            <source src="{{asset('storage/' .$event->video2) }}" type="video/mp4" />
+            <source src="{{asset('storage/' .$event->fileVideo2) }}" type="video/mp4" />
         </video></td>
       @else
         <td></td>
       
       @endif
       @if ( !empty ( $event->fileVideo3) ) 
-        <td><iframe width="200px" height="100px" src="{{asset('storage/' .$event->fileVideo3) }}" ></iframe>  </td>  
        <td><video width="100px" height="100px" controls>
-            <source src="{{asset('storage/' .$event->video3) }}" type="video/mp4" />
+            <source src="{{asset('storage/' .$event->fileVvideo3) }}" type="video/mp4" />
         </video></td>
       @else
         <td></td>

@@ -14,6 +14,7 @@ return [
     */
     // ... Providers array ...
     Cohensive\Embed\EmbedServiceProvider::class,
+    
     'name' => env('APP_NAME', 'Laravel'),
     // ... Aliases array ...
     'Embed' => Cohensive\Embed\Facades\Embed::class,

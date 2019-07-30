@@ -8,6 +8,17 @@
 }
 </style>
 <body >
+  
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>Le titre est obligatoire</li>
+                <li>Les Medias sont trop large , vous devez les mettre dans la chaine youtube</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div class="center">
 <p style="text-align:right;">
 <a href="/activities" >Annuler </a></p>
@@ -60,15 +71,6 @@
       </div>
     </div>
   </div>
-  @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{$error}}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
   <button type="submit" class="btn btn-primary">Ajouter</button>
   @csrf
 </form>

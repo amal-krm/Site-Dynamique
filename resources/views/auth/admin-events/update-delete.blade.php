@@ -130,7 +130,7 @@ h1{
       <td>{{ $event->Titre}}</td>
       <td>{{ $event->contenu}}</td>
       <td><a class="modifier"href="{{url('events/'.$event->id.'/autre')}}">voir plus</a></td>
-      <td><a class="supprimer"href="{{url('events/'.$event->id.'/delete')}}">Supprimer</a></td>
+      <td><a class="supprimer" onclick="return confirm('voulez-vous vraiment supprimer?')"href="{{url('events/'.$event->id.'/delete')}}">Supprimer</a></td>
       <td><a  class="modifier"href="{{url('events/'.$event->id.'/edit')}}">Modifier</a></td>
     </tr>
     @endforeach

@@ -4,8 +4,9 @@
 
   <meta charset="utf-8">
 
-  <title>Hygiène alimentaire</title>
 
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
   
 
   <link rel="stylesheet" href="style.css">
@@ -103,21 +104,16 @@ background-repeat: no-repeat;
 <body>
 @extends('layouts.single-blog')
 <!--================Home Banner Area =================-->
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-160px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2>التعزيات</h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">التعزيات</a> </h3>
+                <hr width="13%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
-
 <!--================End Home Banner Area =================-->
 
 @section('articles')
@@ -142,9 +138,13 @@ background-repeat: no-repeat;
                     <div class="text-center" >
                         <p >{!! nl2br(e($text)) !!}</p>
                     </div>
+                    <div class="d-flex justify-content-center">
+                        <img class="float-left" src="img/signature.png"  height="15%" width="15%;"  >
+                    </div>
             </div>
             </div>
         </article>
+        <hr width="85%" style="padding-bottom:40px;">
     @endforeach
     </div> 
 </div>

@@ -48,7 +48,7 @@ h1 {
 </style>
 <body>
 
-@extends('layouts.gabarit')
+@extends('layouts.gabarit1')
 
 @section('content')
 
@@ -66,7 +66,7 @@ h1 {
 
 
     <!--================ appointment Area Starts =================-->
-    <section class="appointment-area area-padding-top" style="margin-top:20px;">
+    <section class="appointment-area area-padding-top" style="margin-top:200px;margin-bottom:100px;font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">
     <div class="container">
     <div class="appointment-inner">
             <div class="row">
@@ -154,27 +154,28 @@ h1 {
                     </div>
                 </div>
                 <!--Reclamatiom ------------------------------------>
-                <div class="col-lg-5">
+                <div class="col-lg-5" style="font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">
                     <div class="appointment-form">
                         <h1> الشكاية</h1>
                         <p class="info-required"> <i class="required">*</i> الخانات الاجبارية محددة ب  </p>
                         <h3 style="color:#18d26e;">الموضوع الرئيسي : السلامة الصحية</h3>
                         <form action="{{ route('reclamation.store') }}" method="POST">
-                            <div class="form-group">
+                            <div class="form-group"style="direction:rtl;">
                                 <label ><i class="required">*</i> : الموضوع الفرعي</label>
                                 <select id = "myList" style="text-align:right;padding-right:0px; " name="sujet-prin">
                                         <option selected="selected" value="0">اختر</option>
                                         <option value="السلامة الغدائية">السلامة الغدائية  </option>
-                                        <option value="الضرائب و الرسوم">الضرائب و الرسوم </option>
                                         <option value="شكاية رفع الضرر">شكاية رفع الضرر</option>
-                                        <option value="(نواقل الامراض (الكلاب الضالة، الحشرات">(نواقل الامراض (الكلاب الضالة، الحشرات</option>
+                                        <option value="(نواقل الامراض (الكلاب الضالة، الحشرات">نواقل الامراض (الكلاب الضالة، الحشرات)</option>
+                                        <option value=" موضوع اخر">موضوع اخر </option>
+
                                 </select>
                                
                                 <div>{{ $errors->first('name') }}</div> 
                             </div>
                             <h3 style="color:#18d26e;">: الموقع المعني</h3>
                             <div class="form-group">
-                                <label>Commune :</label>
+                              
                                 <input type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" name="commune"> 
                             </div>
                             <h3 style="color:#18d26e;"><i class="required">*</i>: الشكاية</h3>
@@ -187,12 +188,12 @@ h1 {
                                 <input type="file" id="file" name="file" multiple> (يمكنكم إرفاق أية وثيقة ( صورة، ملف إلكتروني، وثيقة مرقمة، الخ 
                             </div>
                             <div class="form-group">
-                                <label><i class="required">*</i>:أين يمكننا رد على شكايتكم</label>
+                                <label style="direction:ltr;"><i class="required">*</i>أين يمكننا رد على شكايتكم: (الهاتف أو البريد الإلكتروني) ؟</label>
                                 <input type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" name="contacter"> 
                                 <div>{{ $errors->first('name') }}</div>
                             </div>
                             @csrf
-                            <button type="submit" class="main_btn">إرسال</button>
+                            <button type="submit" class="main_btn" style="font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;">إرسال</button>
                         </form>
                     </div>
                 </div>

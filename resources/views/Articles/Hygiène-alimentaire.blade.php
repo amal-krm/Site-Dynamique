@@ -5,7 +5,8 @@
 
   <meta charset="utf-8">
 
-  <title>Hygiène alimentaire</title>
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
 
   
 
@@ -93,21 +94,16 @@
 
 @extends('layouts.single-blog')
 <!--================Home Banner Area =================-->
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-140px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2>Hygiène alimentaire</h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">Hygiène alimentaire</a> </h3>
+                <hr width="40%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
-
 <!--================End Home Banner Area =================-->
 
 @section('articles')
@@ -132,7 +128,7 @@
  <li style="text-align:left;"><span style="color:#000000;">Participation à diverses commissions avec les services extérieurs (Telles que la Commission préfectorale, la Commission touristique, la Commission mixte, etc.);</span></li>
  <li style="text-align:left;"><span style="color:#000000;">Délivrance de cartes sanitaires après des examens de coprologie parasitologie des selles et radiographie pulmonaire.</span></li>
  </ul>
- <p style="text-align:justify;"><span style="color:#000000;">Pour la réalisation des orientations  des  plans d’actions annuels élaborés par le service d’hygiène alimentaire, ce dernier a axé son action en premier lieu sur le renforcement de la coordination et de la communication entre le service d’hygiène alimentaire et les antennes d’hygiène relevant de la division d’hygiène et salubrité publique au niveau des différents arrondissements de la ville de Rabat, et en deuxième lieu sur la vulgarisation des bonnes pratiques d’hygiène  alimentaire auprès des professionnels et du personnel. En effet l’action entreprise par le service d’hygiène alimentaire s’articule sur deux volets principaux à savoir :</span></p>
+ <p style="text-align:justify;"><span style="color:#000000;">Pour la réalisation des orientations  des  plans d’actions annuels élaborés par le service d’hygiène alimentaire, ce dernier a axé son action en premier lieu sur le renforcement de la coordination et de la communication entre le service d’hygiène alimentaire et les antennes d’hygiène relevant de la division d’hygiène et salubrité publique au niveau des différents arrondissements de la ville de Larache, et en deuxième lieu sur la vulgarisation des bonnes pratiques d’hygiène  alimentaire auprès des professionnels et du personnel. En effet l’action entreprise par le service d’hygiène alimentaire s’articule sur deux volets principaux à savoir :</span></p>
  <ul style="text-align:justify;"class="b">
  <li><span style="color:#000000;">Une campagne annuelle de grande envergure de recensement et d’actualisation des données relative aux établissements alimentaires ;</span></li>
  <li><span style="color:#000000;">Une campagne parallèle de sensibilisation et d’éducation sanitaire au profit des professionnels de l’alimentaire.</span></li>
@@ -161,7 +157,7 @@
  </ul>
  <p style="text-align:justify;"><span style="color:#000000;">Parallèlement aux campagnes d’inspection, de sensibilisation et d’éducation sanitaire, les inspecteurs d’hygiène relevant du SHA ont procédé à la destruction de denrées alimentaires impropres à la consommation et à la saisie du matériel et ustensile défectueux (poêle, casserole, marmite, couteau, assiette, etc.).</span></p>
  <p style="text-align:justify;"><span style="color:#000000;">Les opérations de contrôle d’hygiène menées par les inspecteurs d’hygiène de la DHSP incluent, le cas échéant, des prélèvements d’échantillons de denrées alimentaires en vue d’analyses bactériologiques et toxicologiques.</span></p>
- <p style="text-align:justify;"><span style="color:#000000;">Ces échantillons  sont prélevés dans le respect des normes en vigueur et mis dans des bocaux stérilisés ou des sacs en plastique appropriés et sont acheminés vers l’Institut National d’hygiène de Rabat pour analyses selon un marché cadre qui lie la commune urbaine de Rabat et cet institut.</span></p>
+ <p style="text-align:justify;"><span style="color:#000000;">Ces échantillons  sont prélevés dans le respect des normes en vigueur et mis dans des bocaux stérilisés ou des sacs en plastique appropriés et sont acheminés vers l’Institut National d’hygiène de Larache pour analyses selon un marché cadre qui lie la commune urbaine de Larache et cet institut.</span></p>
   <p style="text-align:justify;"><span style="color:#000000;">Ces prélèvements sont opérés selon un calendrier hebdomadaire  précisant le jour  du prélèvement et l’arrondissement concerné.</span></p>
  <p style="text-align:justify;"><span style="color:#000000;">La contamination microbiologique des aliments est liée essentiellement à la présence d’un taux des germes de souillure (coliformes fécaux, coliformes totaux et des germes totaux) et la prolifération des bactéries pathogènes. Ce problème se pose essentiellement dans la restauration collective ce qui peut provoquer des toxi-infections alimentaires.</span></p>
  <p style="text-align:justify;"><span style="color:#000000;">Le SHA alimentaire à pour rôle de prendre les mesures de salubrité nécessaires pour lutter contre la propagation des maladies infectieuses particulièrement à travers le prélèvement d’échantillons de denrées alimentaires pour les soumettre aux analyses appropriés.</span></p>

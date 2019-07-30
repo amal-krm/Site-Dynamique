@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Comment;
+use App\activitie;
+use Illuminate\Support\Facades\DB;
+use App\dece;
 use App\event;
 use App\Post;
 use Illuminate\Http\Request;
@@ -15,59 +18,115 @@ class CommentController extends Controller
      */
     public function index1()
     {
-        
-         
-          
-        $comments=\App\Comment::all();
-
-        return view('Articles/Hygiène-alimentaire',compact('comments'));
-        
+        $laatstevent = event::latest()->first();
+        $laatstdece = dece::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/Hygiène-alimentaire',[
+             'laatstdece' => $laatstdece,
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+   
     }
 
 
     public function index2()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/Salubrité-publique',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/Salubrité-publique',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+        
         
     }
     public function index3()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/Lutte-antivectorielle',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/Lutte-antivectorielle',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+       
         
     }
     public function index4()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/Médicolégal',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('control',[
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+        
         
     }
-
     public function index5()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/Ramassage-des-chiens-et-chats-errants',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/Ramassage-des-chiens-et-chats-errants',[
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+        
         
     }
 
     public function index6()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/A-propos-de-l’hygiène',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/A-propos-de-l’hygiène',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+        
         
     }
 
     public function index7()
     {  
-        $comments=\App\Comment::all();
-
-        return view('Articles/Organigramme',compact('comments'));
+        
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles/Organigramme',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            
+        ]);
+   
         
     }
 
@@ -75,130 +134,150 @@ class CommentController extends Controller
     public function index8()
     {
         $deces = \App\dece::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
         return view('deces',[
             'deces' => $deces,
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
         ]);
     }
     public function index9()
     {
         $activities = \App\activitie::all();
-        $comments=\App\Comment::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog =  activitie::latest()->first();
         return view('Activité-relationnelle',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
             'activities' => $activities,
-            'comments' => $comments,
+            
         ]);
-         
-         /* 
-        $comments=\App\Comment::all();
-
-        return view('Activité-relationnelle',compact('comments'));
-        */
+        
+     
     }
     public function index10()
     {
         
         $events = event::all();
-        $comments=\App\Comment::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
         return view('nos-evenements',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
             'events' => $events,
-            'comments' => $comments,
+            
         ]);
+      
+        
+    }
+    public function index11()
+    {
+        
+        $events = event::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('definition',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            'events' => $events,
+            
+        ]);
+      
+        
+    }
+    public function index12()
+    {
+        
+        $events = event::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('services.desordonnes',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            'events' => $events,
+            
+        ]);
+      
         
     }
 
-
-  
+    
    
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function index13()
     {
-        //
+        
+        $events = event::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('services.permission',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            'events' => $events,
+            
+        ]);
+      
+        
     }
-
+    
+    public function index14()
+    {
+        
+        $events = event::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('services.cimetiere',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            'events' => $events,
+            
+        ]);
+      
+        
+    }
+    public function index15()
+    {
+        
+        $events = event::all();
+        $laatstevent = event::latest()->first();
+        $laatstprog1 = activitie::orderBy('created_at', 'desc')->skip(1)->take(1)->get();
+        $laatstprog = activitie::latest()->first();
+        return view('Articles.Lutte',[
+            
+            'laatstevent' => $laatstevent,
+            'laatstprog' => $laatstprog,
+            'laatstprog1' => $laatstprog1,
+            'events' => $events,
+            
+        ]);
+      
+        
+    }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$id)
-    {
-        $post=Post::find($id);
-       /* Comment::create(Request::all());*/
-            $validatedData = $request->validate([
-            "name"=>'required',
-            "email"=>'required',
-            "email"=>'email',
-            "comment"=>'required',
-            ]);
-            
-            if($validatedData)
-            {
-                $comment=new Comment();
-                $comment->post_id=$id;
-                $comment->name=$request->name;
-                $comment->email=$request->email;
-                $comment->comment=$request->comment;
-                $comment->approved=true;
-                
-                $comment->post()->associate($post);
-                $comment->save();
-                 Session::flash('success','commentaire a ete ajouté');
-                 return redirect()->back();
-            }
-            else
-            {
-                return redirect()->back();
-            }
-       
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }

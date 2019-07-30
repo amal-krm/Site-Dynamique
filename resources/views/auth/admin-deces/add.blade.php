@@ -12,6 +12,17 @@
 <div class="center">
 <p style="text-align:right;">
 <a href="/dece" >Annuler  </a></p>
+  
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>Ce champs ne doit pas etre vide</li>
+
+            @endforeach
+        </ul>
+    </div>
+@endif
       <form action="/deces" method="POST" >
           
             <label >Contenu des Condoléances :</label>

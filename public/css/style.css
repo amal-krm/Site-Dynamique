@@ -160,10 +160,14 @@ a {
   margin: 0px; }
 
 body {
+  
   line-height: 27px;
   font-size: 14px;
   /*font-family: "Open Sans", sans-serif;*/
   font-family:Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.765;
   
   font-weight: normal;
   color: #797979; }
@@ -555,12 +559,13 @@ background-color: #f9f9ff}
 /* 5. Banner */
 .banner-area {
  min-height: 800px;
+ /*background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url("../img/banner/home-banner.jpg");*/
 
  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative; }
- @media () {
+ @media (max-width: 767px) {
     .banner-area {
       min-height: 600px; } }
   .banner-area h1 {
@@ -573,7 +578,7 @@ background-color: #f9f9ff}
     @media (max-width: 767px) {
       .banner-area h1 {
         font-size: 26px; } }
-  .p {
+  .banner-area p {
     margin-bottom: 50px; }
     @media (min-width: 576px) and (max-width: 767px) {
       .banner-area p {
@@ -648,7 +653,7 @@ background-color: #f9f9ff}
      /* font-family: "Playfair Display", serif;*/
      font-family:Helvetica;
       margin-bottom: 12px;
-      font-weiaght: bold; 
+      font-weight: bold; 
     margin-top: -45px;}
     .banner_area .banner_inner .banner_content p {
       color: #666666;
@@ -3052,7 +3057,7 @@ h6 {
   font-family: 'Droid Arabic Kufi', Tahoma, Arial, Times New Roman, serif;
   font-family:Helvetica;
   color: #33363e;
-  letter-spacing: 1.5px;
+ 
   position: relative; }
   .link_one:after {
     content: '';
@@ -3091,7 +3096,7 @@ h6 {
     background: #18d26e;
     color: #fff; }
   .button-link {
-    letter-spacing: 0;
+ 
     color: #3b1d82;
     border: 0;
     padding: 0; }
@@ -3365,7 +3370,7 @@ h6 {
   /*  font-family: "Playfair Display", serif;*/
   font-family:Helvetica;
     color: #33363e;
-    letter-spacing: 1.5px;
+
     text-align:center;
     position: relative; }
     .card-service__link:after {

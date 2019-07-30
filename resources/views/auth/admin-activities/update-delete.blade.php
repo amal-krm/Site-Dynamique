@@ -95,6 +95,16 @@ h1{
 @if(Session::has('message'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>Le titre est obligatoire</li>
+                <li>Les Medias sont trop large , vous devez le mettre dans la chaine youtube</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <table class="table table-sm">
   <thead class="head1">
     <tr>
@@ -129,7 +139,8 @@ h1{
       <td>{{ $activitie->Titre}}</td>
       <td>{{ $activitie->contenu}}</td>
       <td><a class="modifier"href="{{url('activities/'.$activitie->id.'/autre')}}">voir plus</a></td>
-      <td><a class="supprimer"href="{{url('activities/'.$activitie->id.'/delete')}}">Supprimer</a></td>
+      <td><a class="supprimer" onclick="return confirm('voulez-vous vraiment supprimer?')"href="{{url('activities/'.$activitie->id.'/delete')}}">Supprimer</a></td>
+
       <td><a  class="modifier"href="{{url('activities/'.$activitie->id.'/edit')}}">Modifier</a></td>
     </tr>
     @endforeach

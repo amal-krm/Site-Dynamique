@@ -9,7 +9,16 @@
 }
 </style>
 <body >
-
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>Le titre est obligatoire</li>
+                <li>Les Medias sont trop large , vous devez le mettre dans la chaine youtube</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div class="center">
 <p style="text-align:right;">
 <a href="/events" >Annuler  </a></p>

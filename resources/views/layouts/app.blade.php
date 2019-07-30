@@ -2,6 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
+    <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
@@ -53,7 +55,7 @@
                                     <a class="nav-link" href="/activities">Activites</a>
                                     </li>
                                     <li class="nav-item">
-                                    <a class="nav-link" href="/events">Evenement</a>
+                                    <a class="nav-link" href="/events">Press</a>
                                     </li>
                                     <li class="nav-item">
                                     <a class="nav-link" href="/dece">Les Condoléances</a>

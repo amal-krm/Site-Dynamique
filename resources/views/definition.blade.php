@@ -4,8 +4,8 @@
 
   <meta charset="utf-8">
 
-  <title>Hygiène alimentaire</title>
-
+  <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
   
 
   <link rel="stylesheet" href="style.css">
@@ -94,19 +94,15 @@
 @extends('layouts.single-blog')
 <!--================Home Banner Area =================-->
 
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:150px;margin-bottom:-150px;">
-    
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:-150px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-            <h2  >عن القسم الجماعي لحفظ الصحة</h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">القسم الجماعي لحفظ الصحة</a> </h3>
+                <hr width="37%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div>
 </section>
 <!--================End Home Banner Area =================-->
 
@@ -137,7 +133,7 @@
                             ستجدون على هذه البوابة كل المعلومات حول مجال تدخل المكتب الجماعي لحفظ الصحة
                             التابع لجماعة العرائش في المجالات التالية : 
                         </p>
-                    
+                    <div id="7ifd">
                     <p style="text-align:right">
                             <h5 style=" color: #18d26e;">_ مراقبة حفظ الصحة:</h5>
                             •&nbsp;&nbsp; &nbsp;مراقبة التزويد بالماء الصالح للشرب؛<br>
@@ -160,7 +156,9 @@
                             •&nbsp;&nbsp; &nbsp;مراقبة المركبات السياحية وأماكن الاصطياف وأخذ العينات قصد
                             التحليل؛<br>
                             •&nbsp;&nbsp;&nbsp; مراقبة صحة العاملين بالمؤسسات؛<br>
-                            •&nbsp;&nbsp; &nbsp;مراقبة وسائل النقل العمومي والغذائي.</p>          
+                            •&nbsp;&nbsp; &nbsp;مراقبة وسائل النقل العمومي والغذائي.</p>   
+                    </div>  
+            <div id="Mo7arabat">     
             <p style="text-align:right">
                     <h5 style=" color: #18d26e;">–	محاربة النواقل</h5> 
                         •&nbsp;&nbsp;
@@ -176,6 +174,8 @@
                         •&nbsp;&nbsp; &nbsp;الإشراف على جمع وقتل الكلاب والقطط الضالة؛<br>
                         •&nbsp;&nbsp; &nbsp;تأطير العمال والإشراف على العمليات
                         </p>
+                        </div>
+                        <div id="Medecine">
                         <p style="text-align:right">
                         <h5 style=" color: #18d26e;">–الطب الشرعي و مراقبة الوفيات: </h5>
                         •&nbsp;&nbsp; &nbsp;إيداع الجثث؛<br>
@@ -184,6 +184,8 @@
                         •&nbsp;&nbsp; &nbsp;تدبير شؤون المستودع البلدي للأموات؛<br>
                         •&nbsp;&nbsp; &nbsp;التكفل بدفن المعوزين والغرباء؛<br>
                         •&nbsp;&nbsp; &nbsp;جمع المعطيات المتعلقة بالولادات لتكملة الإحصائيات.</p>
+                        </div>
+                        <div id="tadbir">
                         <p style="text-align:right">
                         <h5 style=" color: #18d26e;">تدبير وسائل نقل الأموات:</h5> 
                             •&nbsp;&nbsp; تدبير مراكز محاربة داء السعر؛<br>
@@ -192,6 +194,7 @@
                             •&nbsp;&nbsp; المراقبة الصحية والمشاركة في التلقيحات الجماعية؛<br>
                             •&nbsp;&nbsp; المساعدة الصحية لفائدة المؤسسات الخيرية وقاطني السكن الغير
                             اللائق.</p>
+</div>
 
                 </div> 
             </div>

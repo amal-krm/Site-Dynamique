@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\dece;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect ;
+use Illuminate\Support\Facades\Validator;
 use Session;
 class deceController extends Controller
 {
@@ -42,12 +44,25 @@ class deceController extends Controller
     public function store(Request $request)
     {
         //
+        $validator=Validator::make($request->all(), [
+            'contenu' => 'required',
+         
+            
+        ]);
+        $validation = $validator->validate();
+        if ( $validation != true ) {
+            //show errors
+                return Redirect::back()->withErrors($validator->errors());
+            
+        }
+        else{
         $dece = new dece();
         $dece->contenu = $request->input('contenu');
        
         $dece->save();
         return redirect('/dece');
     }
+}
 
     /**
      * Display the specified resource.
@@ -80,12 +95,25 @@ class deceController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $validator=Validator::make($request->all(), [
+            'contenu' => 'required',
+         
+            
+        ]);
+        $validation = $validator->validate();
+        if ( $validation != true ) {
+            //show errors
+                return Redirect::back()->withErrors($validator->errors());
+            
+        }
+        else{
         $dece = dece::find($id);
         $dece->contenu = $request->input('contenu');
         $dece->save();
         Session::flash('message', 'cordoleance Modifier !');
         return redirect('/dece');
     }
+}
     
 
     /**

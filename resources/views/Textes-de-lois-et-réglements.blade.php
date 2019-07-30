@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>BCH Larache</title>
+    <title>BCH Larache</title>
+    <link rel="icon" href="{!! asset('img/favicon.ico') !!}"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -64,56 +65,32 @@ font-size: 50px;
     border-bottom: 2px solid #3CB371;
     margin:50px;
 }
-.img-fluid{
+.single-blog img{
     width:25%;
     height: 200px;
 }
 
 </style>
 </head>
-<body>
+<body >
 
-@extends('layouts.gabarit')
+@extends('layouts.gabarit1')
 
-@section('content')
-
-    <!--================Home Banner Area =================-->
-    <section class="banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="container">
-                <div class="banner_content d-md-flex justify-content-between align-items-center">
-                <div class="mb-3 mb-md-0">
-                    <h2>@yield('title')</h2>
-                    
-                </div>
-                <div class="page_link">
-                   
-                     
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--================End Home Banner Area =================-->
-<!--================ Start Blog Area =================-->
-<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:50px">
-    
-    <div class="container">
+<section class="ana-area text-center ana-padding" style=" text-align:right;margin-top:250px;margin-bottom:80px;margin-left:10vw;">
+<div class="container">
         <div class="row">
             <div class="col-lg-12">
-          
-                <h2> <a href="/nos-services" style="color:#000;font-weight: bold;"
-                 > قوانين و مساطر</a> </h2>
-             </div>
-                
-            </div>
+                <h3 style="color:#000;font-weight: bold;font-size:40px;font-family: Arial, Helvetica, sans-serif;">قوانين و مساطر</a> </h3>
+                <hr width="22%" style=" display: block;margin-top:px;border-top: 2px solid #18d26e;"> 
+            </div>    
         </div>
-
-    
+    </div> 
 </section>
 
-<section class="blog-area area-padding">
-        <div class="container">
+
+@section('content')
+<section class="blog-area area-padding" style="margin-left:10vw;">
+        <div class="container" >
             <div class="area-heading row">
              
                 <div class="col-md-7 col-xl-8">
@@ -186,12 +163,11 @@ font-size: 50px;
                 <div class="col-md-6 col-lg-4 col-md-4">
                     <div class="single-blog">
                         <div class="thumb">
-                            <img class="img-fluid" src="img/texte-loi/Loi17-08.png" alt="">
+                            <img class="img-fluid" src="img/texte-loi/juridique.png" alt="">
                         </div>
                         <div class="short_details">
-                            
-                            <a class="d-block" href="https://drive.google.com/file/d/0B8PfIENc6ilgYmk0TUN5MUVZa2c/edit">
-                                <h4>Loi 17-08 complétant et modifiant la loi 78-00 portant charte communale</h4>
+                            <a class="d-block" href="https://drive.google.com/file/d/0B8PfIENc6ilgbmxhcVRlWi1yZ28/edit">
+                                <h4>Juridictions financière du Royaume du Maroc</h4>
                             </a>
                             
                         </div>
@@ -612,19 +588,7 @@ font-size: 50px;
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-md-4">
-                    <div class="single-blog">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/texte-loi/juridique.png" alt="">
-                        </div>
-                        <div class="short_details">
-                            <a class="d-block" href="https://drive.google.com/file/d/0B8PfIENc6ilgbmxhcVRlWi1yZ28/edit">
-                                <h4>Juridictions financière du Royaume du Maroc</h4>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div><!--
+                <!--
                 <div class="col-md-6 col-lg-4 col-md-4">
                 <!--single blog
                     <div class="single-blog">
